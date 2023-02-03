@@ -6,15 +6,17 @@ import styles from "./styles";
     
 const Home = () =>{
     const [exibir, setExibir] = useState(false);
+    var rnd1 = Math.floor(Math.random() * 100) + 1  
+    var rnd2 = Math.floor(Math.random() * 100) + 1 
     return(
         <View>
             <View>
-                {exibir? <img src={"https://picsum.photos/200"}></img> : null}      
+                {exibir? <img src={"https://picsum.photos/id/" + rnd1 + "/" + rnd2}></img> : null}      
             </View>
-        <TouchableOpacity onPress={()=>setExibir(!exibir)}>
+        <TouchableOpacity onPress={()=>setExibir(!exibir, rnd1.toString(), rnd2.toString())}>
             <img src={blackcat}></img>
         </TouchableOpacity>
         </View>
     )
 }
-export default Home 
+export default Home     
