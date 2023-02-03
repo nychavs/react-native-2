@@ -3,18 +3,15 @@ import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native'
 import blackcat from '../../assets/blackcat-removebg-preview.png'
 import styles from "./styles";
 
-const [exibir, setExibir] = useState(false);
-const exibe = () =>{
-    setExibir(!exibir)
-}
-
+    
 const Home = () =>{
+    const [exibir, setExibir] = useState(false);
     return(
         <View>
             <View>
-                {exibir? <img src={blackcat}></img> : null}      
+                {exibir? <img src={"https://picsum.photos/200"}></img> : null}      
             </View>
-        <TouchableOpacity onPress={()=>exibir()}>
+        <TouchableOpacity onPress={()=>setExibir(!exibir)}>
             <img src={blackcat}></img>
         </TouchableOpacity>
         </View>
