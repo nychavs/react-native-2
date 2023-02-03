@@ -8,24 +8,24 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     areaInput:{
-        marginTop:'70vw',
+        marginTop:'80vw',
         backgroundColor:'#b79fcf',
-        paddingRight: '2vw',
-        paddingLeft:'2vw',
+        paddingRight: '3vw',
+        paddingLeft:'3vw',
         paddingBottom:'2vw',
         paddingTop:'2vw',
         alignItems:"center",
-        width:'90vw'
+        width:'80vw',
+        borderRadius:'1vw'
     },
     TextInput: {
         borderRadius:'1vw',
         color: 'black',
         marginTop:'2vw',
-        width: '100%',
+        width: '90%',
         height: 50,
-        selectionColor: '#b281e3',
-        underlineColorAndroid: '#b281e3',
-        backgroundColor:'white'
+        backgroundColor:'white',
+        textAlign: 'center'
     },
     button:{
         borderRadius:'1vw',
@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
         marginTop:'4vw',
         width:'30vw',
         height:'08vw',   
-        alignItems:'center'
-    }
+        textAlign:'center', 
+        paddingTop:'1vw'
+    },
 })
 export default styles

@@ -4,6 +4,13 @@ import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native'
 
 
 const Login = ({navigation}) => {
+    // const [username, setUsername] = useState("")
+    // const verify = (username) =>{
+    //     if (username.length <= 3){
+    //         Alert.alert('saaaaaaa', 'aaaa')
+    //         console.log('uepa')
+    //     }
+    // }
     return(
         <View style={styles.container}>
             <View style={styles.areaInput}>
